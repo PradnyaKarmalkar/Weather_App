@@ -2,6 +2,9 @@
 
 A beautiful and responsive Django-based weather application that provides real-time weather information for any city worldwide using the OpenWeatherMap API.
 
+# Screenshot
+![Weather App Screenshot](Screenshot(224).png)
+
 ## Features
 
 - 🌍 **Global Weather Data**: Get weather information for any city around the world
