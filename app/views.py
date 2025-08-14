@@ -1,9 +1,14 @@
 from django.shortcuts import render
 import requests 
+from dotenv import load_dotenv
+import os
+
+
 
 def index(request):
     city = request.GET.get('city', 'Kolhapur')  # Default city
-    api_key = '70da8fd98121c1a65a9159c7bfb51568'
+    load_dotenv()
+    api_key = os.getenv("api_key")
     
     api_url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
     
